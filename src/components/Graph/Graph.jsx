@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import "./Graph.css";
 import CanvasJSReact from "../canvasjs.react" 
-import { stat } from 'fs';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 export default class Graph extends Component {
@@ -46,7 +45,6 @@ export default class Graph extends Component {
     }
     
     render() {
-        const {data} = this.props;
         const {chart} = this.state;
         return (
             <div>

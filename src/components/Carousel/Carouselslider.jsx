@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { Carousel } from 'react-responsive-carousel';
 import Slider from "react-slick";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 import './Carousel.css';
 import Card from '../Card/DayCard';
@@ -19,7 +17,7 @@ const settings = {
 };
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick ,icon} = props;
+    const { className, onClick ,icon} = props;
     return (
         <div
             className={className}

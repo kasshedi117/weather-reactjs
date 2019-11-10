@@ -6,8 +6,8 @@ import Carouselslider from "./components/Carousel/Carouselslider";
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
+
+
 
 
 const API_KEY = "cd18be29c90c66cec7e4bf4c742be766";
@@ -25,7 +25,7 @@ class App extends React.Component {
         this.getWeather();
     }
     getWeather = () => {
-        const api_call = fetch(`http://api.openweathermap.org/data/2.5/forecast?q=Munich,de&appid=${API_KEY}&cnt=40&units=${this.state.unit}`)
+        fetch(`http://api.openweathermap.org/data/2.5/forecast?q=Munich,de&appid=${API_KEY}&cnt=40&units=${this.state.unit}`)
         .then(Response=>{ return Response.json()})
         .then(Response=>{
             this.setState({
@@ -67,8 +67,8 @@ class App extends React.Component {
                 { Object.keys(days).length > 0 &&
                     <div className="m-5">
                         <RadioGroup defaultValue="metric" aria-label="gender" style={{ display: 'flex',flexDirection:"row",justifyContent:"center" }} name="customized-radios">
-                            <FormControlLabel style={{width: "-moz-fit-content"}} value="metric" checked={unit=='metric'}  control={<Radio   style={{width:"35px"}}   onClick={this.setUnit}/>} label="Metric" />
-                            <FormControlLabel style={{width: "-moz-fit-content"}} value="imperial" checked={unit=='imperial'} control={<Radio  style={{width:"35px"}}  onClick={this.setUnit}/>} label="Imperial" />
+                            <FormControlLabel style={{width: "-moz-fit-content"}} value="metric" checked={unit==='metric'}  control={<Radio   style={{width:"35px"}}   onClick={this.setUnit}/>} label="Metric" />
+                            <FormControlLabel style={{width: "-moz-fit-content"}} value="imperial" checked={unit==='imperial'} control={<Radio  style={{width:"35px"}}  onClick={this.setUnit}/>} label="Imperial" />
                         </RadioGroup>
                         <div>
                             <Carouselslider data={days} unit={unit} onClick={this.click}/>

@@ -10,7 +10,7 @@ export default class DayCard extends Component {
             <Card>
             <CardActionArea  onClick={this.props.onClick}>
                 <Typography><strong>Temp:</strong></Typography>
-                <p>{temp} {unit=="metric"?"M":"F"}</p>
+                <p>{temp} {unit==="metric"?"M":"F"}</p>
                 <Typography><strong>Date:</strong></Typography>
                 <p>{date}</p>
             </CardActionArea>
