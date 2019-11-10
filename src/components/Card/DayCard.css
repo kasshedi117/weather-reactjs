@@ -1,0 +1,19 @@
+
+.MuiCard-root {
+  width: 96%;
+  margin: auto;
+  /* padding: 15px; */
+  margin: 0px auto 15px auto;
+}
+.MuiCard-root .MuiButtonBase-root {
+     padding: 15px !important; 
+
+}
+.MuiCard-root:hover {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+
+.MuiCard-root:active{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+
+}

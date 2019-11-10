@@ -1,0 +1,15 @@
+svg{
+    width: auto !important;
+    height: auto !important;
+}
+
+svg path{
+    fill: black !important;
+}
+
+.slick-arrow::before{
+    content: '' !important;
+}
+.slick-slider{
+    margin-top: 50px;
+}
