@@ -2,6 +2,9 @@ App to check weather. Technology used: ReactJs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Watch the video](https://img.youtube.com/vi/r4epo67lDW4/maxresdefault.jpg)](https://youtu.be/r4epo67lDW4)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
